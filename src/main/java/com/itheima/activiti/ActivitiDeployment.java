@@ -8,6 +8,10 @@ import org.activiti.engine.repository.Deployment;
 /**
  *  流程定义的部署
  *  activiti表有哪些?
+ *
+ *  act_re_deplayment 部署信息
+ *  act_re_procdef    流程定义
+ *  act_re_bytearray  流程定义的bpmn文件及png文件
  */
 public class ActivitiDeployment {
 
