@@ -28,8 +28,8 @@ public class ActivitiCompleteTask {
 
         // 3.查询当前用户的任务
         Task task = taskService.createTaskQuery()
-                .processDefinitionKey("holiday")
-                .taskAssignee("wangwu")
+                .processDefinitionKey("holiday2")
+                .taskAssignee("zhangsan")
                 .singleResult();//唯一的一条，如果俩条用list
 
         // 4.处理任务，结合当前用户任务列表的查询操作的话，任务ID:task.getId() 不用查库在写7502

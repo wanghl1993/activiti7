@@ -33,7 +33,8 @@ public class HistoryQuery {
 
         historicActivityInstanceQuery.processInstanceId("2501"); //设置流程实例的ID
         // 4.执行查询
-        List<HistoricActivityInstance> list = historicActivityInstanceQuery.list();
+        List<HistoricActivityInstance> list = historicActivityInstanceQuery
+                .orderByHistoricActivityInstanceStartTime().asc().list();   //排序
         // 5.遍历查询结果
         for(HistoricActivityInstance instance : list) {
             System.out.println(instance.getActivityId());

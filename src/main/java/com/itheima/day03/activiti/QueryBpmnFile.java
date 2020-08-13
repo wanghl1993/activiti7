@@ -31,7 +31,7 @@ public class QueryBpmnFile {
         // 3.得到查询器: ProcessDefinitionQuery对象
         ProcessDefinitionQuery processDefinitionQuery = repositoryService.createProcessDefinitionQuery();
         // 4.设置查询条件
-        processDefinitionQuery.processDefinitionKey("holiday");//参数是流程定义的key
+        processDefinitionQuery.processDefinitionKey("holiday2");//参数是流程定义的key
         // 5.执行查询操作,查询出想要的流程定义
         ProcessDefinition processDefinition = processDefinitionQuery.singleResult();
         // 6.通过流程定义信息,得到部署ID
