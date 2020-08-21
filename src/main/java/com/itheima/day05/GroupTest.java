@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  *  组任务的测试
+ *  act_ru_identitylink 候选人时候type类型会是 participant
  */
 public class GroupTest {
 
