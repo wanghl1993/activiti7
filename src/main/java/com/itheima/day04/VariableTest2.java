@@ -13,6 +13,8 @@ import java.util.Map;
  */
 public class VariableTest2 {
 
+
+
     // 完成任务 zhangsan --- lisi --- 判断流程变量的请假天数,1天 ---- 分支: 人事经理存档
     public static void main(String[] args) {
         // 1.得到ProcessEngine

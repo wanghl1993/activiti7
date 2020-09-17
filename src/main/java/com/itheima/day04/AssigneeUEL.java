@@ -22,7 +22,7 @@ public class AssigneeUEL {
 
         // 3.设置assignee的取值 用户可以在界面上设置流程的执行人
         Map<String,Object> map = new HashMap<String,Object>();
-        map.put("assignee0","zhangsan");
+        map.put("assignee0","zhangsan");    //bpmn文件需要设置成 ${assignee0}
         map.put("assignee1","lisi");
         map.put("assignee2","wangwu");
 

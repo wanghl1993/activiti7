@@ -1,5 +1,6 @@
 package com.itheima.activiti;
 
+import com.itheima.entity.Message;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;
 import org.activiti.engine.RepositoryService;
@@ -54,9 +55,9 @@ public class ActivitiDeployment {
 
         // 3.进行部署
         Deployment deployment = repositoryService.createDeployment()
-                .addClasspathResource("diagram/holiday2.bpmn") //添加bpmn资源
-                .addClasspathResource("diagram/holiday2.png")
-                .name("请假申请单流程")
+                .addClasspathResource("diagram/message01.bpmn") //添加bpmn资源
+//                .addClasspathResource("diagram/holiday2.png")
+                .name("报文审批流程")
                 .deploy();
 
         // 4.输出部署的一些信息

@@ -26,7 +26,7 @@ public class QueryProcessDefinition {
 
         // 4.设置条件，并查询出当前的所有流程定义     查询条件: 流程定义的key = holiday
         // orderByProcessDefinitionVersion()   设置排序方式,根据流程定义的版本号进行排序
-        List<ProcessDefinition> list = processDefinitionQuery.processDefinitionKey("holiday")
+        List<ProcessDefinition> list = processDefinitionQuery.processDefinitionKey("messageTest")
                 .orderByProcessDefinitionVersion()
                 .desc().list();
 

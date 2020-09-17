@@ -26,7 +26,7 @@ public class ActivitiStartInstance {
         // 2.得到RunService对象
         RuntimeService runtimeService = processEngine.getRuntimeService();
         // 3.创建流程实例 流程定义的key需要知道 holiday
-        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("holiday2");
+        ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("messagex");
         // 4.输出实例的相关信息
         System.out.println("流程部署ID" + processInstance.getDeploymentId()); //null
         System.out.println("流程定义ID" + processInstance.getProcessDefinitionId()); //holiday:1:4

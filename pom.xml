@@ -15,6 +15,14 @@
 
     <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.3.3.RELEASE</version>
+        </dependency>
+
+
         <!-- 文件的读写 -->
         <dependency>
             <groupId>commons-io</groupId>

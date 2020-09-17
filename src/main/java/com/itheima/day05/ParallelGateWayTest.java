@@ -28,7 +28,7 @@ public class ParallelGateWayTest {
         // 3.查询当前用户的任务
         Task task = taskService.createTaskQuery()
                 .processDefinitionKey("holidayParallel")
-                .taskAssignee("xiaowu")
+                .taskAssignee("lisi")
                 .singleResult();//唯一的一条，如果俩条用list
 
         // 4.处理任务，结合当前用户任务列表的查询操作的话，任务ID:task.getId() 不用查库在写7502
@@ -42,7 +42,7 @@ public class ParallelGateWayTest {
     }
 
     // 2.启动流程实例
-    public static void main2(String[] args) {
+    public static void main1(String[] args) {
         // 1.得到ProcessEngine对象
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 
@@ -66,7 +66,7 @@ public class ParallelGateWayTest {
     }
 
     // 1.部署流程定义 带排他网关,同时还带并行网关
-    public static void main1(String[] args) {
+    public static void main2(String[] args) {
         // 1.创建ProcessEngine对象
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         // 2.得到RepositoryService实例

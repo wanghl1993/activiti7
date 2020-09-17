@@ -1,0 +1,3 @@
+spring:
+  activiti:
+    database-schema-update: drop-create
